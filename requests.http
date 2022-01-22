@@ -1,0 +1,51 @@
+GET http://localhost:3000/tweets/
+
+###
+
+POST http://localhost:3000/tweets/
+Content-Type: application/json
+
+{
+  "user_id": 2,
+  "tweet": "testing testing 1 2 3"
+}
+
+###
+
+PATCH http://localhost:3000/tweets/6
+Content-Type: application/json
+
+{
+  "tweet": "yellow snow lol"
+}
+
+###
+
+DELETE http://localhost:3000/tweets/6
+
+###
+
+GET http://localhost:3000/users/
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+  "name": "hi there",
+  "bio": "why hello"
+}
+
+###
+
+PATCH http://localhost:3000/users/3
+Content-Type: application/json
+
+{
+  "name": "oh hi there"
+}
+
+###
+
+DELETE http://localhost:3000/users/3
